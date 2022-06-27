@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.example.erkebulan.ErkebulanApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.016 s <<< FAILURE! - in com.example.erkebulan.ErkebulanApplicationTests
+contextLoads  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: URL [jar:file:/C:/Users/User/.m2/repository/io/springfox/springfox-oas/3.0.0/springfox-oas-3.0.0.jar!/springfox/documentation/oas/web/OpenApiControllerWebMvc.class]; nested exception is java.lang.IllegalArgumentException: Unresolvable class definition for class [springfox.documentation.spring.web.OnServletBasedWebApplication]
+Caused by: java.lang.IllegalArgumentException: Unresolvable class definition for class [springfox.documentation.spring.web.OnServletBasedWebApplication]
+Caused by: java.lang.NoClassDefFoundError: springfox/documentation/common/ClassPresentInClassPathCondition
+Caused by: java.lang.ClassNotFoundException: springfox.documentation.common.ClassPresentInClassPathCondition
+
